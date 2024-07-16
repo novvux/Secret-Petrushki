@@ -20,7 +20,7 @@ import com.novvux.petrushka.item.custom.Overgorwn_Diary
 
 
 object ModItems {
-    // Item Group
+    // Item group name, id and key
     val CUSTOM_ITEM_GROUP_KEY: RegistryKey<ItemGroup> =
         RegistryKey.of(Registries.ITEM_GROUP.key, Identifier.of(SecretPetrushki.MOD_ID, "item_group"))
     val CUSTOM_ITEM_GROUP: ItemGroup = FabricItemGroup.builder()
@@ -32,6 +32,7 @@ object ModItems {
     val SUSPICIOUS_FOOD_COMPONENT: FoodComponent = FoodComponent.Builder().alwaysEdible().snack()
         .statusEffect(StatusEffectInstance(StatusEffects.POISON, 6*20, 1), 0.3f).build()
 
+    // Mod items
     val EGOR: Item = register(Item(Item.Settings().food(SUSPICIOUS_FOOD_COMPONENT)), "egor")
     val OVERGROWN_DIARY: Item = register(Overgorwn_Diary(Item.Settings().maxCount(1)), "overgrown_diary")
 
@@ -40,10 +41,10 @@ object ModItems {
     }
 
     fun initialize() {
-        // Register the group.
+        // Register the item group
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP)
 
-        // Register items to the custom item group.
+        // Register items to the custom item group
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY)
             .register(ModifyEntries { itemGroup: FabricItemGroupEntries ->
                 itemGroup.add(OVERGROWN_DIARY)

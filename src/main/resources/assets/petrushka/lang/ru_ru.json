@@ -2,7 +2,9 @@
   "itemGroup.petrushka": "Секрет Петрушки",
 
   "item.petrushka.egor": "Егор",
-  "item.petrushka.storybook": "Заросший дневник",
+  "item.petrushka.overgrown_diary": "Заросший дневник",
+
+  "block.petrushka.strange_melon": "Странный арбуз",
 
   "itemTooltip.petrushka.overgrown_diary": "Лианы на книге пытаются её открыть"
 }

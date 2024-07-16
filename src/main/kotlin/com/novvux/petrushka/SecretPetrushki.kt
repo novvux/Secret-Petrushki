@@ -1,5 +1,6 @@
 package com.novvux.petrushka
 
+import com.novvux.petrushka.block.ModBlocks
 import com.novvux.petrushka.item.ModItems
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
@@ -10,6 +11,7 @@ object SecretPetrushki : ModInitializer {
 
 	override fun onInitialize() {
 		ModItems.initialize();
+		ModBlocks.initialize()
 		logger.info("HEWO! PETRUWKA IZ TALKIN")
 	}
 }
