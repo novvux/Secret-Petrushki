@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"id": "petrushka",
+	"version": "${version}",
+	"name": "Secret Petrushki",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"novvux",
+		"Acearte"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/petrushka/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.novvux.petrushka.SecretPetrushki",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.novvux.petrushka.SecretPetrushkiClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.novvux.petrushka.SecretPetrushkiDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"petrushka.mixins.json",
+		{
+			"config": "petrushka.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
