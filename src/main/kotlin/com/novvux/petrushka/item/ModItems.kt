@@ -17,6 +17,7 @@ import net.minecraft.util.Identifier
 
 import com.novvux.petrushka.SecretPetrushki
 import com.novvux.petrushka.item.custom.Overgorwn_Diary
+import com.novvux.petrushka.item.custom.Scythe_Lolipop
 
 
 object ModItems {
@@ -30,11 +31,14 @@ object ModItems {
 
 
     val SUSPICIOUS_FOOD_COMPONENT: FoodComponent = FoodComponent.Builder().alwaysEdible().snack()
-        .statusEffect(StatusEffectInstance(StatusEffects.POISON, 6*20, 1), 0.3f).build()
+        .statusEffect(StatusEffectInstance(StatusEffects.STRENGTH, 6*20, 1), 0.3f).build()
+    val SCYTHE_FOOD_COMPONENT: FoodComponent = FoodComponent.Builder().alwaysEdible().snack()
+        .statusEffect(StatusEffectInstance(StatusEffects.STRENGTH, 6*20, 1), 0.3f).build()
 
     // Mod items
-    val EGOR: Item = register(Item(Item.Settings().food(SUSPICIOUS_FOOD_COMPONENT)), "egor")
     val OVERGROWN_DIARY: Item = register(Overgorwn_Diary(Item.Settings().maxCount(1)), "overgrown_diary")
+    val SCYTHE_LOLIPOP: Item = register(Scythe_Lolipop(Item.Settings().food(SCYTHE_FOOD_COMPONENT)), "scythe_lolipop")
+    val EGOR: Item = register(Item(Item.Settings().food(SUSPICIOUS_FOOD_COMPONENT)), "egor")
 
     fun register(item: Item, id: String?): Item {
         return Registry.register(Registries.ITEM, Identifier.of(SecretPetrushki.MOD_ID, id), item)
@@ -47,6 +51,7 @@ object ModItems {
         // Register items to the custom item group
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY)
             .register(ModifyEntries { itemGroup: FabricItemGroupEntries ->
+                itemGroup.add(SCYTHE_LOLIPOP)
                 itemGroup.add(OVERGROWN_DIARY)
                 itemGroup.add(EGOR)
             })
