@@ -1,8 +1,49 @@
 {
-    "parent": "block/orientable",
+    "parent": "block/cube",
     "textures": {
-        "down": "block/strange_melon_bottom",
-        "up": "block/strange_melon_top",
-        "side": "block/strange_melon_mid"
-    }
+        "particle": "petrushka:block/strange_melon_mid",
+        "top": "petrushka:block/strange_melon_top",
+        "side": "petrushka:block/strange_melon_mid",
+        "bottom": "petrushka:block/strange_melon_bottom"
+    },
+    "elements": [
+        {
+            "from": [
+                0,
+                0,
+                0
+            ],
+            "to": [
+                16,
+                16,
+                16
+            ],
+            "faces": {
+                "down": {
+                    "texture": "#bottom",
+                    "cullface": "down"
+                },
+                "up": {
+                    "texture": "#top",
+                    "cullface": "up"
+                },
+                "north": {
+                    "texture": "#side",
+                    "cullface": "north"
+                },
+                "south": {
+                    "texture": "#side",
+                    "cullface": "south"
+                },
+                "west": {
+                    "texture": "#side",
+                    "cullface": "west"
+                },
+                "east": {
+                    "texture": "#side",
+                    "cullface": "east"
+                }
+            }
+        }
+    ]
 }

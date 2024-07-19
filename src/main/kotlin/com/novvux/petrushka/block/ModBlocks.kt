@@ -39,5 +39,5 @@ object ModBlocks {
             .register(ModifyEntries { itemGroup: FabricItemGroupEntries ->
                 itemGroup.add(STRANGE_MELON.asItem())
             })
-    };
+    }
 }
