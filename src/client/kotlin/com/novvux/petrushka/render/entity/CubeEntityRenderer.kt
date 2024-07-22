@@ -1,4 +1,4 @@
-package com.novvux.petrushka.renderer.entity
+package com.novvux.petrushka.render.entity
 
 import com.novvux.petrushka.SecretPetrushki
 import com.novvux.petrushka.entity.ModEntitiesClient

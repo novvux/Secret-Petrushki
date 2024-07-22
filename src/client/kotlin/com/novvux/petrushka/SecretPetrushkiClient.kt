@@ -1,7 +1,7 @@
 package com.novvux.petrushka
 
 import com.novvux.petrushka.entity.ModEntitiesClient
-import com.novvux.petrushka.particles.ModParticlesClient
+import com.novvux.petrushka.particle.ModParticlesClient
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.EnvType
 import net.fabricmc.api.Environment

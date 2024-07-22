@@ -2,7 +2,7 @@ package com.novvux.petrushka.entity
 
 import com.novvux.petrushka.SecretPetrushki
 import com.novvux.petrushka.model.entity.CubeEntityModel
-import com.novvux.petrushka.renderer.entity.CubeEntityRenderer
+import com.novvux.petrushka.render.entity.CubeEntityRenderer
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry
 import net.minecraft.client.render.entity.model.EntityModelLayer

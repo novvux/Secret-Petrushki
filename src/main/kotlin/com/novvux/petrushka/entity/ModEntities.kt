@@ -12,6 +12,7 @@ import net.minecraft.world.World
 
 
 object ModEntities {
+    @Suppress("DEPRECATION")
     val CUBE: EntityType<CubeEntity> = Registry.register(
         Registries.ENTITY_TYPE, Identifier.of(SecretPetrushki.MOD_ID, "cube"),
         FabricEntityTypeBuilder.create<CubeEntity?>(SpawnGroup.CREATURE)

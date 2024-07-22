@@ -1,5 +1,6 @@
 package com.novvux.petrushka.item.custom
 
+import com.novvux.petrushka.particle.ModParticles
 import net.minecraft.entity.EntityType
 import net.minecraft.entity.LightningEntity
 import net.minecraft.entity.player.PlayerEntity
@@ -14,21 +15,20 @@ import net.minecraft.world.World
 
 
 class Overgorwn_Diary(settings: Settings): Item(settings) {
-    override fun use(world: World, user: PlayerEntity, hand: Hand?): TypedActionResult<ItemStack> {
-        if (world.isClient) {
-            return TypedActionResult.pass(user.getStackInHand(hand))
-        }
+    override fun use(world: World, playerEntity: PlayerEntity, hand: Hand?): TypedActionResult<ItemStack> {
+        // Spawn particle
+        world.addParticle(ModParticles.CIRCLE_PARTICLE, playerEntity.x, playerEntity.y + 0.1, playerEntity.z, 0.0, 0.0, 0.0)
 
-        val frontOfPlayer = user.blockPos.offset(user.horizontalFacing, 10)
+        val frontOfPlayer = playerEntity.blockPos.offset(playerEntity.horizontalFacing, 10)
 
+        /*if (world.isClient) { return TypedActionResult.pass(playerEntity.getStackInHand(hand)) }
         // Spawn the lightning bolt.
         val lightningBolt = LightningEntity(EntityType.LIGHTNING_BOLT, world)
         lightningBolt.setPosition(frontOfPlayer.toCenterPos())
-        world.spawnEntity(lightningBolt)
+        world.spawnEntity(lightningBolt)*/
 
-        // Nothing has changed to the item stack,
-        // so we just return it how it was.
-        return TypedActionResult.success(user.getStackInHand(hand))
+        // Return item stack
+        return TypedActionResult.success(playerEntity.getStackInHand(hand))
     }
 
     override fun appendTooltip(stack: ItemStack?, context: TooltipContext?, tooltip: MutableList<Text?>, type: TooltipType?) {
