@@ -2,10 +2,27 @@
   "itemGroup.petrushka": "Secret Petrushki",
 
   "item.petrushka.egor": "Egor",
+  "item.petrushka.scythe_lolipop": "Scythe Lolipop",
   "item.petrushka.overgrown_diary": "Overgrown Diary",
+  "item.petrushka.dull_crystal": "Dull Crystal",
+  "item.petrushka.faint_crystal": "Faint Crystal",
+  "item.petrushka.glittering_crystal": "Glittering Crystal",
+  "item.petrushka.shining_crystal": "Shining Crystal",
+  "item.petrushka.chalka": "Chalka",
+
+  "item.petrushka.curly_helmet": "Curly Helmet",
+  "item.petrushka.curly_chestplate": "Curly Chestplate",
+  "item.petrushka.curly_leggings": "Curly Leggings",
+  "item.petrushka.curly_boots": "Curly Boots",
 
   "block.petrushka.strange_melon": "Strange Melon",
 
   "itemTooltip.petrushka.overgrown_diary": "Vines all over the book trying to open it",
-  "itemTooltip.petrushka.scythe_lolipop": "Monsters will suck"
+  "itemTooltip.petrushka.scythe_lolipop": "Monsters will suck",
+  "itemTooltip.petrushka.chalka": "Can be anything you want, but at what cost?",
+
+  "itemTooltip.petrushka.dull_crystal": "A shiny stone. Maybe it needs to be honed?",
+  "itemTooltip.petrushka.faint_crystal": "It glows faintly",
+  "itemTooltip.petrushka.glittering_crystal": "It's flickering",
+  "itemTooltip.petrushka.shining_crystal": "Transparent walls expose the light inside"
 }

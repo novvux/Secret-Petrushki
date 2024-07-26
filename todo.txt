@@ -8,12 +8,15 @@
     При открытии книги должны появляться магический круг под игроком
 
 Мультиинструмент - чалка (рабочее название)
+При вставке предмета в чалку будет добавляться атрибут в контент предмета
 
 Кристалл-улучшение
 Вставка модификаторов как в ванильный bundle
 
 Святой биом / Заражённый биом:
     Блоки
+
+Кастомный трим
 
 Саженец дерева
 
@@ -22,3 +25,17 @@
 Колючая лоза
 
 Ходячий арбуз
+
+Необходимые текстуры предметов:
+    petrushka:item/dull_crystal
+    petrushka:item/faint_crystal
+    petrushka:item/glittering_crystal
+    petrushka:item/shining_crystal
+    petrushka:item/chalka
+    petrushka:item/curly_helmet
+    petrushka:item/curly_chestplate
+    petrushka:item/curly_leggings
+    petrushka:item/curly_boots
+    petrushka:item/overgrown_diary
+
+    petrushka:item/scythe_lolipop

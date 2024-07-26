@@ -2,10 +2,27 @@
   "itemGroup.petrushka": "Секрет Петрушки",
 
   "item.petrushka.egor": "Егор",
+  "item.petrushka.scythe_lolipop": "Коса-леденец",
   "item.petrushka.overgrown_diary": "Заросший дневник",
+  "item.petrushka.dull_crystal": "Скучный кристалл",
+  "item.petrushka.faint_crystal": "Бледный кристалл",
+  "item.petrushka.glittering_crystal": "Мерцающий кристалл",
+  "item.petrushka.shining_crystal": "Светящийся кристалл",
+  "item.petrushka.chalka": "Чалка",
+
+  "item.petrushka.curly_helmet": "Вьющийся шлем",
+  "item.petrushka.curly_chestplate": "Вьющийся нагрудник",
+  "item.petrushka.curly_leggings": "Вьющиеся поножи",
+  "item.petrushka.curly_boots": "Вьющиеся ботинки",
 
   "block.petrushka.strange_melon": "Странный арбуз",
 
   "itemTooltip.petrushka.overgrown_diary": "Лианы на книге пытаются её открыть",
-  "itemTooltip.petrushka.scythe_lolipop": "Монстры пососут"
+  "itemTooltip.petrushka.scythe_lolipop": "Монстры пососут",
+  "itemTooltip.petrushka.chalka": "Может быть всем, чем угодно, но какой ценой?",
+
+  "itemTooltip.petrushka.dull_crystal": "Блестящий камень. Может его нужно отточить?",
+  "itemTooltip.petrushka.faint_crystal": "Слабо светится",
+  "itemTooltip.petrushka.glittering_crystal": "Он мерцает",
+  "itemTooltip.petrushka.shining_crystal": "Прозрачные стенки обнажают свет внутри"
 }

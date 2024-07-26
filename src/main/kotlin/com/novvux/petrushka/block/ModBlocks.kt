@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier
 
 object ModBlocks {
     val STRANGE_MELON: Block = register(
-        Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SHROOMLIGHT).strength(4.0f).requiresTool()),
+        Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.SHROOMLIGHT).strength(1.0f)),
         "strange_melon", true)
 
     fun register(block: Block, name: String, shouldRegisterItem: Boolean): Block {
