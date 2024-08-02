@@ -3,7 +3,8 @@
 	"package": "com.novvux.petrushka.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ItemUpgradeSlotsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

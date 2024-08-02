@@ -9,9 +9,16 @@ import net.minecraft.util.Identifier
 
 
 object ModComponents {
-    val UPGRADE_SLOTS: ComponentType<Int> = Registry.register<ComponentType<*>, ComponentType<Int>>(
+    @JvmField
+    val UPGRADE_SLOTS: ComponentType<Byte> = Registry.register<ComponentType<*>, ComponentType<Byte>>(
         Registries.DATA_COMPONENT_TYPE,
-        Identifier.of(SecretPetrushki.MOD_ID, "click_count"),
-        ComponentType.builder<Int>().codec(Codec.INT).build()
+        Identifier.of(SecretPetrushki.MOD_ID, "upgrade_slots"),
+        ComponentType.builder<Byte>().codec(Codec.BYTE).build()
     )
+
+    /*val MODULE_DATA_COMPONENT: ComponentType<ModuleDataComponent> = Registry.register(
+        Registries.DATA_COMPONENT_TYPE,
+        Identifier.of(SecretPetrushki.MOD_ID, "module_data_component"),
+        ComponentType.builder<ModuleDataComponent>().codec(ModuleDataComponent.CODEC).build()
+    )*/
 }

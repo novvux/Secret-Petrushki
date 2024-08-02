@@ -1,7 +1,9 @@
 package com.novvux.petrushka.item
 
 import com.novvux.petrushka.SecretPetrushki
+import com.novvux.petrushka.api.moduled.ModuledContentsComponent
 import com.novvux.petrushka.component.ModComponents
+import com.novvux.petrushka.component.ModDataComponentTypes
 import com.novvux.petrushka.item.armor.ModArmorMaterials
 import com.novvux.petrushka.item.custom.Overgorwn_Diary
 import com.novvux.petrushka.item.custom.TooltipItem
@@ -10,8 +12,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents.ModifyEntries
-import net.minecraft.component.DataComponentTypes
-import net.minecraft.component.type.BundleContentsComponent
 import net.minecraft.component.type.FoodComponent
 import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.effect.StatusEffects
@@ -52,7 +52,7 @@ object ModItems {
 
     // Tools
     val CHALKA: Item = register(ModuleItem(/*ModuledMaterial.INSTANCE*/ "itemTooltip.petrushka.chalka",
-        Item.Settings().maxCount(1).component(DataComponentTypes.BUNDLE_CONTENTS, BundleContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "chalka")
+        Item.Settings().maxCount(1).component(ModDataComponentTypes.BUNDLE_CONTENTS, ModuledContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "chalka")
 
     // Armor
     val CURLY_HELMET: Item = register(ArmorItem(ModArmorMaterials.MODULED, ArmorItem.Type.HELMET,

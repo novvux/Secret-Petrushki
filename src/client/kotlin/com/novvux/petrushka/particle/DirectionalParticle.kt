@@ -88,4 +88,8 @@ open class DirectionalParticle protected constructor(
         this.scale *= scale
         return super.scale(scale)
     }
+
+    /*
+    TODO: Make particle rotate
+     */
 }
