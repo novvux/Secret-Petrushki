@@ -3,7 +3,6 @@ package com.novvux.petrushka.item
 import com.novvux.petrushka.SecretPetrushki
 import com.novvux.petrushka.api.moduled.ModuledContentsComponent
 import com.novvux.petrushka.component.ModComponents
-import com.novvux.petrushka.component.ModDataComponentTypes
 import com.novvux.petrushka.item.armor.ModArmorMaterials
 import com.novvux.petrushka.item.custom.Overgorwn_Diary
 import com.novvux.petrushka.item.custom.TooltipItem
@@ -52,7 +51,7 @@ object ModItems {
 
     // Tools
     val CHALKA: Item = register(ModuleItem(/*ModuledMaterial.INSTANCE*/ "itemTooltip.petrushka.chalka",
-        Item.Settings().maxCount(1).component(ModDataComponentTypes.BUNDLE_CONTENTS, ModuledContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "chalka")
+        Item.Settings().maxCount(1).component(ModComponents.BUNDLE_CONTENTS, ModuledContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "chalka")
 
     // Armor
     val CURLY_HELMET: Item = register(ArmorItem(ModArmorMaterials.MODULED, ArmorItem.Type.HELMET,

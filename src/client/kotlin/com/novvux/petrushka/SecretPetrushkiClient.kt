@@ -1,6 +1,7 @@
 package com.novvux.petrushka
 
 import com.novvux.petrushka.entity.ModEntitiesClient
+import com.novvux.petrushka.interactions.CustomClientInteractions
 import com.novvux.petrushka.particle.ModParticlesClient
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.EnvType
@@ -12,5 +13,8 @@ object SecretPetrushkiClient: ClientModInitializer {
 		// Initialize client renderers
 		ModEntitiesClient.initialize()
 		ModParticlesClient.initialize()
+
+		// Initialize custom interactions
+		//CustomClientInteractions.initialize()
 	}
 }

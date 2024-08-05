@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "com.novvux.petrushka.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "com.novvux.petrushka.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ExampleClientMixin",
+    "IHandledScreenInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

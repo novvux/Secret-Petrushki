@@ -31,7 +31,7 @@ class Overgorwn_Diary(settings: Settings): Item(settings) {
         return TypedActionResult.success(playerEntity.getStackInHand(hand))
     }
 
-    override fun appendTooltip(stack: ItemStack?, context: TooltipContext?, tooltip: MutableList<Text?>, type: TooltipType?) {
+    override fun appendTooltip(stack: ItemStack, context: TooltipContext, tooltip: MutableList<Text>, type: TooltipType) {
         tooltip.add(Text.translatable("itemTooltip.petrushka.overgrown_diary").formatted(Formatting.GOLD))
     }
 }
