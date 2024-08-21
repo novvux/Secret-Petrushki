@@ -9,6 +9,14 @@
 
 Мультиинструмент - чалка (рабочее название)
 При вставке предмета в чалку будет добавляться атрибут в контент предмета
+Улучшения, которые занимают больше 1 слота
+Улучшения:
+    Навершие меча (2 слота)
+    Навершие кирки (2 слота)
+    Навершие топора (2 слота)
+    Навершие молота (2 слота)
+
+Биомагия - улучшение игрока магией
 
 Кристалл-улучшение
 Вставка модификаторов как в ванильный bundle
@@ -29,15 +37,20 @@
 Ходячий арбуз
 
 Необходимые текстуры предметов:
-    petrushka:item/dull_crystal
-    petrushka:item/faint_crystal
-    petrushka:item/glittering_crystal
-    petrushka:item/shining_crystal
-    petrushka:item/chalka
-    petrushka:item/curly_helmet
-    petrushka:item/curly_chestplate
-    petrushka:item/curly_leggings
-    petrushka:item/curly_boots
-    petrushka:item/overgrown_diary
+    petrushka:item/dull_crystal - скучный кристалл
+    petrushka:item/faint_crystal - бледный кристалл
+    petrushka:item/glittering_crystal - мерцающий кристалл
+    petrushka:item/shining_crystal - светящийся кристалл
+    petrushka:item/sword_head - навершие меча
+    petrushka:item/pickaxe_head - навершие кирки
+    petrushka:item/axe_head - навершие топора
+    petrushka:item/mace_head - навершие молота
 
-    petrushka:item/scythe_lolipop
+    petrushka:item/chalka - загогулина
+    petrushka:item/curly_helmet - вьющийся шлем
+    petrushka:item/curly_chestplate - вьющийся нагрудник
+    petrushka:item/curly_leggings - вьющиеся поножи
+    petrushka:item/curly_boots - вьющиеся ботинки
+    petrushka:item/overgrown_diary - заросший дневник
+
+    petrushka:item/scythe_lolipop - коса-леденец

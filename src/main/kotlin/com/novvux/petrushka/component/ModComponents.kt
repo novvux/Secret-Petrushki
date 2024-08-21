@@ -2,7 +2,7 @@ package com.novvux.petrushka.component
 
 import com.mojang.serialization.Codec
 import com.novvux.petrushka.SecretPetrushki
-import com.novvux.petrushka.api.moduled.ModuledContentsComponent
+import com.novvux.petrushka.component.moduled.ModuledContentsComponent
 import net.minecraft.component.ComponentType
 import net.minecraft.component.DataComponentTypes
 import net.minecraft.component.type.BundleContentsComponent

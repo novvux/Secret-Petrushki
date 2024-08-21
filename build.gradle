@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
@@ -43,6 +45,25 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
+
+	/*
+	var type = project.properties.get("item_viewer_type");
+
+	modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}")
+	modCompileOnly("dev.emi:emi-fabric:${project.emi_version}:api")
+	modCompileOnly("mezz.jei:jei-1.20.6-fabric-api:${project.jei_version}")
+	//modCompileOnly("mezz.jei:jei-${rootProject.minecraft_version}-fabric-api:${rootProject.jei_version}")
+
+	if(type == "rei") {
+		modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
+	} else if(type == "emi") {
+		modLocalRuntime("dev.emi:emi-fabric:${project.emi_version}")
+	} else if(type == "jei") {
+		//modLocalRuntime("mezz.jei:jei-${rootProject.minecraft_version}-fabric:${rootProject.jei_version}")
+	} else if(type != "none") {
+		throw new IllegalStateException("Unable to locate the given item viewer!")
+	}
+	*/
 }
 
 processResources {
@@ -57,7 +78,7 @@ tasks.withType(JavaCompile).configureEach {
 	it.options.release = 21
 }
 
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+tasks.withType(KotlinCompile).configureEach {
 	kotlinOptions {
 		jvmTarget = 21
 	}
@@ -90,9 +111,11 @@ publishing {
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		maven { url "https://maven.fabricmc.net/" }
+		maven { url "https://maven.shedaniel.me/" }
+		maven { url "https://maven.architectury.dev/" }
+		maven { url "https://maven.terraformersmc.com/" }
+		maven { url "https://maven.blamejared.com/" } // location of the maven that hosts JEI files since January 2023
+		maven { url "https://modmaven.dev" } // location of a maven mirror for JEI files, as a fallback
 	}
 }

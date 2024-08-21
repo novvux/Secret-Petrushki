@@ -2,27 +2,43 @@
   "itemGroup.petrushka": "Секрет Петрушки",
 
   "item.petrushka.egor": "Егор",
-  "item.petrushka.scythe_lolipop": "Коса-леденец",
+  "item.petrushka.scythe_lollipop": "Коса-леденец",
+  "itemTooltip.petrushka.scythe_lollipop": "Монстры пососут",
   "item.petrushka.overgrown_diary": "Заросший дневник",
-  "item.petrushka.dull_crystal": "Скучный кристалл",
-  "item.petrushka.faint_crystal": "Бледный кристалл",
-  "item.petrushka.glittering_crystal": "Мерцающий кристалл",
-  "item.petrushka.shining_crystal": "Светящийся кристалл",
+  "itemTooltip.petrushka.overgrown_diary": "Лианы на книге пытаются её открыть",
+
   "item.petrushka.chalka": "Чалка",
+  "itemTooltip.petrushka.chalka": "Может быть всем, чем угодно, но какой ценой?",
 
   "item.petrushka.curly_helmet": "Вьющийся шлем",
   "item.petrushka.curly_chestplate": "Вьющийся нагрудник",
   "item.petrushka.curly_leggings": "Вьющиеся поножи",
   "item.petrushka.curly_boots": "Вьющиеся ботинки",
 
-  "block.petrushka.strange_melon": "Странный арбуз",
-
-  "itemTooltip.petrushka.overgrown_diary": "Лианы на книге пытаются её открыть",
-  "itemTooltip.petrushka.scythe_lolipop": "Монстры пососут",
-  "itemTooltip.petrushka.chalka": "Может быть всем, чем угодно, но какой ценой?",
-
+  "item.petrushka.dull_crystal": "Скучный кристалл",
   "itemTooltip.petrushka.dull_crystal": "Блестящий камень. Может его нужно отточить?",
+  "item.petrushka.faint_crystal": "Бледный кристалл",
   "itemTooltip.petrushka.faint_crystal": "Слабо светится",
+  "item.petrushka.glittering_crystal": "Мерцающий кристалл",
   "itemTooltip.petrushka.glittering_crystal": "Он мерцает",
-  "itemTooltip.petrushka.shining_crystal": "Прозрачные стенки обнажают свет внутри"
+  "item.petrushka.shining_crystal": "Светящийся кристалл",
+  "itemTooltip.petrushka.shining_crystal": "Прозрачные стенки обнажают свет внутри",
+
+  "item.petrushka.sword_head": "Навершие меча",
+  "item.petrushka.pickaxe_head": "Навершие кирки",
+  "item.petrushka.axe_head": "Навершие топора",
+  "item.petrushka.mace_head": "Навершие булавы",
+  "itemTooltip.petrushka.head_modifier": "Может быть использовано как модификатор",
+
+  "tag.item.petrushka.modificator": "Modificator",
+  "tag.item.petrushka.crystal": "Crystal",
+  "tag.item.petrushka.tier0crystal": "Tier 0 Crystal",
+  "tag.item.petrushka.tier1crystal": "Tier 1 Crystal",
+  "tag.item.petrushka.tier2crystal": "Tier 2 Crystal",
+  "tag.item.petrushka.tier3crystal": "Tier 3 Crystal",
+
+
+
+
+  "block.petrushka.strange_melon": "Странный арбуз"
 }

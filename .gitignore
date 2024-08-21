@@ -42,3 +42,7 @@ replay_*.log
 # kotlin
 
 .kotlin
+
+# generated cash
+
+/src/main/generated/.cache/

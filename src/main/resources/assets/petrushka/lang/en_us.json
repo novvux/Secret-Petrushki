@@ -2,27 +2,40 @@
   "itemGroup.petrushka": "Secret Petrushki",
 
   "item.petrushka.egor": "Egor",
-  "item.petrushka.scythe_lolipop": "Scythe Lolipop",
+  "item.petrushka.scythe_lollipop": "Scythe Lollipop",
+  "itemTooltip.petrushka.scythe_lollipop": "Monsters will suck",
   "item.petrushka.overgrown_diary": "Overgrown Diary",
-  "item.petrushka.dull_crystal": "Dull Crystal",
-  "item.petrushka.faint_crystal": "Faint Crystal",
-  "item.petrushka.glittering_crystal": "Glittering Crystal",
-  "item.petrushka.shining_crystal": "Shining Crystal",
-  "item.petrushka.chalka": "Chalka",
+  "itemTooltip.petrushka.overgrown_diary": "Vines all over the book trying to open it",
+
+  "item.petrushka.squiggle": "Squiggle",
+  "itemTooltip.petrushka.squiggle": "Can be anything you want, but at what cost?",
 
   "item.petrushka.curly_helmet": "Curly Helmet",
   "item.petrushka.curly_chestplate": "Curly Chestplate",
   "item.petrushka.curly_leggings": "Curly Leggings",
   "item.petrushka.curly_boots": "Curly Boots",
 
-  "block.petrushka.strange_melon": "Strange Melon",
-
-  "itemTooltip.petrushka.overgrown_diary": "Vines all over the book trying to open it",
-  "itemTooltip.petrushka.scythe_lolipop": "Monsters will suck",
-  "itemTooltip.petrushka.chalka": "Can be anything you want, but at what cost?",
-
+  "item.petrushka.dull_crystal": "Dull Crystal",
   "itemTooltip.petrushka.dull_crystal": "A shiny stone. Maybe it needs to be honed?",
+  "item.petrushka.faint_crystal": "Faint Crystal",
   "itemTooltip.petrushka.faint_crystal": "It glows faintly",
+  "item.petrushka.glittering_crystal": "Glittering Crystal",
   "itemTooltip.petrushka.glittering_crystal": "It's flickering",
-  "itemTooltip.petrushka.shining_crystal": "Transparent walls expose the light inside"
+  "item.petrushka.shining_crystal": "Shining Crystal",
+  "itemTooltip.petrushka.shining_crystal": "Transparent walls expose the light inside",
+
+  "item.petrushka.sword_head": "Sword Head",
+  "item.petrushka.pickaxe_head": "Pickaxe Head",
+  "item.petrushka.axe_head": "Axe Head",
+  "item.petrushka.mace_head": "Mace Head",
+  "itemTooltip.petrushka.head_modifier": "This can be used as a modifier",
+
+  "tag.item.petrushka.modificator": "Modificator",
+  "tag.item.petrushka.crystal": "Crystal",
+  "tag.item.petrushka.tier0crystal": "Tier 0 Crystal",
+  "tag.item.petrushka.tier1crystal": "Tier 1 Crystal",
+  "tag.item.petrushka.tier2crystal": "Tier 2 Crystal",
+  "tag.item.petrushka.tier3crystal": "Tier 3 Crystal",
+
+  "block.petrushka.strange_melon": "Strange Melon"
 }

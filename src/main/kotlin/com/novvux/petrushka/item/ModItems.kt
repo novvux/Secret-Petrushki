@@ -1,10 +1,11 @@
 package com.novvux.petrushka.item
 
 import com.novvux.petrushka.SecretPetrushki
-import com.novvux.petrushka.api.moduled.ModuledContentsComponent
+import com.novvux.petrushka.component.moduled.ModuledContentsComponent
 import com.novvux.petrushka.component.ModComponents
 import com.novvux.petrushka.item.armor.ModArmorMaterials
-import com.novvux.petrushka.item.custom.Overgorwn_Diary
+import com.novvux.petrushka.item.custom.Mutator
+import com.novvux.petrushka.item.custom.OvergrownDiary
 import com.novvux.petrushka.item.custom.TooltipItem
 import com.novvux.petrushka.item.custom.moduled.ModuleItem
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
@@ -39,8 +40,9 @@ object ModItems {
         .statusEffect(StatusEffectInstance(StatusEffects.STRENGTH, 6*20, 1), 0.3f).build()
 
     // Items
-    val OVERGROWN_DIARY: Item = register(Overgorwn_Diary(Item.Settings().maxCount(1)), "overgrown_diary")
-    val SCYTHE_LOLIPOP: Item = register(TooltipItem("itemTooltip.petrushka.scythe_lolipop", Formatting.GOLD, Item.Settings().food(SCYTHE_FOOD_COMPONENT)), "scythe_lolipop")
+    val OVERGROWN_DIARY: Item = register(OvergrownDiary(Item.Settings().maxCount(1)), "overgrown_diary")
+    val MUTATOR: Item = register(Mutator(Item.Settings().maxCount(1)), "mutator")
+    val SCYTHE_LOLIPOP: Item = register(TooltipItem("itemTooltip.petrushka.scythe_lollipop", Formatting.GOLD, Item.Settings().food(SCYTHE_FOOD_COMPONENT)), "scythe_lollipop")
     val EGOR: Item = register(Item(Item.Settings().food(SUSPICIOUS_FOOD_COMPONENT)), "egor")
 
     // Modifiers
@@ -49,9 +51,14 @@ object ModItems {
     val GLITTERING_CRYSTAL: Item = register(TooltipItem("itemTooltip.petrushka.glittering_crystal", Formatting.GOLD, Item.Settings()), "glittering_crystal")
     val SHINING_CRYSTAL: Item = register(TooltipItem("itemTooltip.petrushka.shining_crystal", Formatting.GOLD, Item.Settings()), "shining_crystal")
 
+    val SWORD_HEAD: Item = register(TooltipItem("itemTooltip.petrushka.head_modifier", Formatting.GRAY, Item.Settings().maxCount(32)), "sword_head")
+    val PICKAXE_HEAD: Item = register(TooltipItem("itemTooltip.petrushka.head_modifier", Formatting.GRAY, Item.Settings().maxCount(32)), "pickaxe_head")
+    val AXE_HEAD: Item = register(TooltipItem("itemTooltip.petrushka.head_modifier", Formatting.GRAY, Item.Settings().maxCount(32)), "axe_head")
+    val MACE_HEAD: Item = register(TooltipItem("itemTooltip.petrushka.head_modifier", Formatting.GRAY, Item.Settings().maxCount(32)), "mace_head")
+
     // Tools
-    val CHALKA: Item = register(ModuleItem(/*ModuledMaterial.INSTANCE*/ "itemTooltip.petrushka.chalka",
-        Item.Settings().maxCount(1).component(ModComponents.BUNDLE_CONTENTS, ModuledContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "chalka")
+    val SQUIGGLE: Item = register(ModuleItem(/*ModuledMaterial.INSTANCE*/ "itemTooltip.petrushka.squiggle",
+        Item.Settings().maxCount(1).component(ModComponents.BUNDLE_CONTENTS, ModuledContentsComponent.DEFAULT).component(ModComponents.UPGRADE_SLOTS, 2)), "squiggle")
 
     // Armor
     val CURLY_HELMET: Item = register(ArmorItem(ModArmorMaterials.MODULED, ArmorItem.Type.HELMET,
@@ -81,6 +88,7 @@ object ModItems {
             .register(ModifyEntries { itemGroup: FabricItemGroupEntries ->
                 itemGroup.add(SCYTHE_LOLIPOP)
                 itemGroup.add(OVERGROWN_DIARY)
+                itemGroup.add(MUTATOR)
                 itemGroup.add(EGOR)
 
                 itemGroup.add(DULL_CRYSTAL)
@@ -88,7 +96,12 @@ object ModItems {
                 itemGroup.add(GLITTERING_CRYSTAL)
                 itemGroup.add(SHINING_CRYSTAL)
 
-                itemGroup.add(CHALKA)
+                itemGroup.add(SWORD_HEAD)
+                itemGroup.add(PICKAXE_HEAD)
+                itemGroup.add(AXE_HEAD)
+                itemGroup.add(MACE_HEAD)
+
+                itemGroup.add(SQUIGGLE)
 
                 itemGroup.add(CURLY_HELMET)
                 itemGroup.add(CURLY_CHESTPLATE)

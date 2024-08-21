@@ -1,8 +1,6 @@
 package com.novvux.petrushka.item.custom
 
 import com.novvux.petrushka.particle.ModParticles
-import net.minecraft.entity.EntityType
-import net.minecraft.entity.LightningEntity
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
@@ -14,7 +12,7 @@ import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 
 
-class Overgorwn_Diary(settings: Settings): Item(settings) {
+class OvergrownDiary(settings: Settings): Item(settings) {
     override fun use(world: World, playerEntity: PlayerEntity, hand: Hand?): TypedActionResult<ItemStack> {
         // Spawn particle
         world.addParticle(ModParticles.CIRCLE_PARTICLE, playerEntity.x, playerEntity.y + 0.1, playerEntity.z, 0.0, 0.0, 0.0)

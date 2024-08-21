@@ -10,5 +10,5 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 @Mixin(HandledScreen.class)
 public interface IHandledScreenInvoker {
     @Invoker("getSlotAt")
-    public Slot invokeGetSlotAt(double x, double y);
+    Slot invokeGetSlotAt(double x, double y);
 }

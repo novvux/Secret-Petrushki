@@ -38,6 +38,11 @@ class SecretPetrushkiDataGenerator : DataGeneratorEntrypoint {
 				.add(ModItems.FAINT_CRYSTAL)
 				.add(ModItems.GLITTERING_CRYSTAL)
 				.add(ModItems.SHINING_CRYSTAL)
+
+				.add(ModItems.SWORD_HEAD)
+				.add(ModItems.PICKAXE_HEAD)
+				.add(ModItems.AXE_HEAD)
+				.add(ModItems.MACE_HEAD)
 			// Crystal tag
 			getOrCreateTagBuilder(CRYSTAL)
 				.add(ModItems.DULL_CRYSTAL)
