@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier
 
 object ModParticles {
     val EGOR_PARTICLE: SimpleParticleType = registerParticle("egor_particle", FabricParticleTypes.simple())
-    val CIRCLE_PARTICLE: SimpleParticleType = registerParticle("circle_particle", FabricParticleTypes.simple())
 
     private fun registerParticle(name: String, particleType: SimpleParticleType): SimpleParticleType {
         return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(SecretPetrushki.MOD_ID, name), particleType)

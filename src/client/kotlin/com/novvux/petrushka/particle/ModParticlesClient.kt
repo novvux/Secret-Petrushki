@@ -9,6 +9,5 @@ import net.minecraft.client.particle.EndRodParticle
 object ModParticlesClient {
     fun initialize() {
         ParticleFactoryRegistry.getInstance().register(ModParticles.EGOR_PARTICLE, EndRodParticle::Factory)
-        ParticleFactoryRegistry.getInstance().register(ModParticles.CIRCLE_PARTICLE, CircleParticle::Factory)
     }
 }

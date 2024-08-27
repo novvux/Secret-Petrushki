@@ -48,7 +48,6 @@
 		"java": ">=21",
 		"fabric-api": "*",
 		"fabric-language-kotlin": "*",
-
 		"fabric-key-binding-api-v1": "*"
 	},
 	"suggests": {
